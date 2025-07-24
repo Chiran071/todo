@@ -6,13 +6,18 @@ let todos=document.querySelector(".todos")
 btn.addEventListener("click",function(){
 let todovalue=todoinput.value;
 let li= document.createElement("li");
-todos.appendChild(li)
+let div=document.createElement("div");
 let delbtn=document.createElement("button");
 delbtn.innerHTML="delete";
-todos.appendChild(delbtn);
+
+div.className="list";
+
+div.appendChild(li);
+div.appendChild(delbtn);
+todos.appendChild(div)
+
 delbtn.addEventListener("click",function(){
-    todos.removeChild(li);
-    todos.removeChild(delbtn);
+    todos.removeChild(div);
 })
 
 li.innerHTML=todovalue;

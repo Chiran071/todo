@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
 .sample{
     color: blue;
 }
@@ -19,10 +24,40 @@ body{
 }
 
 input{
-    width: 70%;
+    width: 80%;
+    padding: 7px 5px;
+    margin: 19px auto;
+}
+
+.btn{
     padding: 7px 5px;
 }
 
-#bth{
+.list{
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    background-color: aqua;
+    border-radius: 7px;
+    margin: 7px auto;
+    
+}
+
+.list button{
     padding: 7px 5px;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    border: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    width: 90%;
+    display: flex;
+    align-items: center;
+
 }
