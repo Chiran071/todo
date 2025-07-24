@@ -15,6 +15,7 @@ div.className="list";
 div.appendChild(li);
 div.appendChild(delbtn);
 todos.appendChild(div)
+todoinput.value="";
 
 delbtn.addEventListener("click",function(){
     todos.removeChild(div);
